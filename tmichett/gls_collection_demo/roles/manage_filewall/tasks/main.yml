@@ -1,7 +1,7 @@
 ---
 # tasks file for firewall management
 - name: Modify Firewall for Services
-  firewalld:
+  ansible.posix.firewalld:
     service: "{{ item.fw_svc_name }}"
     permanent: "{{ fw_permanent }}"
     state: "{{ fw_state }}"
@@ -10,7 +10,7 @@
   loop: "{{ fw_svc }}"
 
 - name: Modify Firewall for Ports
-  firewalld:
+  ansible.posix.firewalld:
     port: '{{ item.fw_port }}/{{ item.fw_proto }}'
     permanent: "{{ fw_permanent }}"
     state: "{{ fw_state }}"
