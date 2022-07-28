@@ -13,3 +13,6 @@ Tutorial
    :parser: markdown
 
 {include} ../roles/deploy_packages/README.md
+
+
+.. mdinclude:: ../roles/deploy_packages/README.md
