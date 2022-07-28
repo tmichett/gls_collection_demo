@@ -11,3 +11,5 @@ Tutorial
 --------
 .. include:: ../roles/deploy_packages/README.md
    :parser: markdown
+
+{include} ../roles/deploy_packages/README.md
