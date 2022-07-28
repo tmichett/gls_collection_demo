@@ -5,4 +5,5 @@ ml
 
 Tutorial
 --------
-.. include:: ../roles/deploy_packages/README.md
+```{include} ../roles/deploy_packages/README.md
+```
